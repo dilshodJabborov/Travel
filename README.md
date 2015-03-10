@@ -4,13 +4,12 @@ Bu xizmat tekin.Buni uchun siz saytimizga kirib haydovchilar kiritib qoygan yo'n
 haydovchilar bilan sayohatga chiqasiz va sayoxat tugagach haydovchi haqidagi fikringizni bildirib haydovchini reytingi ko'tarilishi yoki
 tushurishingiz mumkun.
 ###Sayt quidagi qismlardan iborat boladi:  
- * Bosh sahifa.
- -------
+* ###Bosh sahifa.
  Bosh sahifa orqali barcha murojatlar va foydalanuvchilarga yordam beradigan barcha xizmatlar ko'rsatiladi
-* Haydovchilar Registratsiya qismi.
-* Haydovchilar shafarlarini taklif qilish.
-* Safar yonalishlarini izlash.
-* Sayohatchilarni registratsiyadan o'tkazish.
-* Mobil telefonlar uchun dasturni yuklash.
-* Haydovchilar haqidagi fikrlarni yozib qoldirish
-* Ko'rsatmalar.
+* ###Haydovchilar Registratsiya qismi.
+* ###Haydovchilar shafarlarini taklif qilish.
+* ###Safar yonalishlarini izlash.
+* ###Sayohatchilarni registratsiyadan o'tkazish.
+* ###Mobil telefonlar uchun dasturni yuklash.
+* ###Haydovchilar haqidagi fikrlarni yozib qoldirish
+* ###Ko'rsatmalar.
