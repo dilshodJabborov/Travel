@@ -1,7 +1,7 @@
 # Travel
 ##Sayohat qilish uchun sayohatchilar o'zlariga yoqgan haydovchilar bilan sayt orqali topishib va kelishib olishadi.
 ###Sayt quidagi qismlardan iborat boladi:  
-* Bosh sahifa.
+Bosh sahifa.
 ==========
 * Haydovchilar Registratsiya qismi.
 * Haydovchilar shafarlarini taklif qilish.
