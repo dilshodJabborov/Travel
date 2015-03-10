@@ -7,5 +7,5 @@
 * Safar yonalishlarini izlash.
 * Sayohatchilarni registratsiyadan o'tkazish.
 * Mobil telefonlar uchun dasturni yuklash.
-* Haydovchilar haqidagi fikrlarni yozib qoldirish.
+* Haydovchilar haqidagi fikrlarni yozib qoldirish
 * Ko'rsatmalar.
