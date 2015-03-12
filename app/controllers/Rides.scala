@@ -12,6 +12,6 @@ object Rides extends Controller{
       val formParams = request.body.asFormUrlEncoded
       val fromCity = formParams.get("fromCity")(0)
       val toCity = formParams.get("toCity")(0)
-      Ok(views.html.list(Ride.findById(fromCity,toCity)))
+      Ok(views.html.list(Ride.findByParams(fromCity,toCity)))
   }
 }

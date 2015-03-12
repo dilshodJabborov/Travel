@@ -12,5 +12,5 @@ object Ride {
     Ride(4,"Alex","London","Manchester",true,12)
   )
   def findAll = rides.sortBy(_.id)
-  def findById(fromCity: String,toCity:String) = rides.filter(_.fromCity == fromCity).toList
+  def findByParams(fromCity: String,toCity:String) = rides.filter(_.fromCity == fromCity).toList
 }
