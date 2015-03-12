@@ -1,0 +1,33 @@
+@(rides: List[Ride])
+@main("Home") {
+
+    @navbar("list")
+
+    <div class="container main-content">
+
+        <h1 class="text-center">World's most beautiful cities.</h1>
+        <table class="table table-striped @if(rides.isEmpty){hidden}">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>From city</th>
+                    <th>To city</th>
+                    <th>Smoking</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(city <- rides) {
+                <tr>
+                    <td>@city.name</td>
+                    <td>@city.fromCity</td>
+                    <td>@city.toCity</td>
+                    <td>@if(city.smoking){Yes}</td>
+                    <td>@city.cost $</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+

@@ -1,7 +1,61 @@
 @(message: String)
 
 @main(message) {
-
-    <h1>Qayerlarni sayohat qilishni istaysiz?Unda <a href="#">Sayohat.uz</a>ga  @message</h1>
+    @navbar("Home")
+    <div class="container">
+        <form class="jumbotron form form-inline" method="post" action="@routes.Rides.list()">
+            <h2 class="text-primary">Connecting people who need to travel with drivers who have empty seats</h2>
+            <p class="text-info"> Find a ride</p>
+            <div class="form-group">
+                <input class="form-control" name="fromCity" placeholder="From" type="text"/>
+            </div>
+            <div class="form-group">
+                <input class="form-control" placeholder="To" name="toCity" type="text"/>
+            </div>
+            <button type="submit" class="btn btn-warning">Find</button>
+            <h2>Share city-to-city car journeys with a trusted community of 10 million verified members</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <img src="@routes.Assets.at("images/1.jpg")" alt="" class="img-circle img-responsive">
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <span class="glyphicon glyphicon-star text-warning"></span>
+                            Rating left for Chloe B.
+                            "Lovely ride with Chloe. She's friendly, a safe driver, plus she's a local!"
+                            James K.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <img src="@routes.Assets.at("images/2.jpg")" alt="" class="img-circle img-responsive">
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <span class="glyphicon glyphicon-star text-warning"></span>
+                            Rating left for Sarah A.
+                            "Trip whizzed by with some great topics of conversation. Thanks, such a pleasure!"
+                            Izzy C.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <img src="@routes.Assets.at("images/3.png")" alt="" class="img-circle img-responsive">
+                        </div>
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                            <span class="glyphicon glyphicon-star text-warning"></span>
+                            Rating left for Alex K.
+                            "Driving to Newcastle with Alex was awesome! He was polite, fun and made the whole experience very easy. "
+                            Emma T.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
 }
