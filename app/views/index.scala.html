@@ -2,8 +2,8 @@
 
 @main(message) {
     @navbar("Home")
-    <div class="container">
-        <form class="jumbotron form form-inline" method="post" action="@routes.Rides.list()">
+    <div class="container" style="background-image: url(@routes.Assets.at("images/road1.jpg"))">
+        <form class="form form-inline" method="post" action="@routes.Rides.list()">
             <h2 class="text-primary">Connecting people who need to travel with drivers who have empty seats</h2>
             <p class="text-info"> Find a ride</p>
             <div class="form-group">
