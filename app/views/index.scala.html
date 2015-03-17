@@ -2,60 +2,75 @@
 
 @main(message) {
     @navbar("Home")
-    <div class="container" style="background-image: url(@routes.Assets.at("images/road1.jpg"))">
-        <form class="form form-inline" method="post" action="@routes.Rides.list()">
-            <h2 class="text-primary">Connecting people who need to travel with drivers who have empty seats</h2>
-            <p class="text-info"> Find a ride</p>
-            <div class="form-group">
-                <input class="form-control" name="fromCity" placeholder="From" type="text"/>
-            </div>
-            <div class="form-group">
-                <input class="form-control" placeholder="To" name="toCity" type="text"/>
-            </div>
-            <button type="submit" class="btn btn-warning">Find</button>
-            <h2>Share city-to-city car journeys with a trusted community of 10 million verified members</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <img src="@routes.Assets.at("images/1.jpg")" alt="" class="img-circle img-responsive">
+    <div class="container" >
+        <div style="background-image: url(@routes.Assets.at("images/road5.jpeg"));background-repeat: no-repeat">
+            <form class="form form-inline" method="post" action="@routes.Rides.list()">
+                <div style="background: rgba(255,255,255,0.5)">
+                    <h2 class="text-white">Connecting people who need to travel with drivers who have empty seats</h2>
+                </div>
+                <p class="text-white"> Find a ride</p>
+                <div class="form-group">
+                    <input class="form-control" style="background: url('@routes.Assets.at("images/searchFrom.png")') no-repeat scroll 6px 5px #fff;
+                    padding-left: 32px;" name="fromCity" placeholder="From" type="text"/>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" style="background: url('@routes.Assets.at("images/searchTo.png")') no-repeat scroll 6px 5px #fff;
+                    padding-left: 32px;" placeholder="To" name="toCity" type="text"/>
+                </div>
+                <button type="submit" class="btn btn-warning">Find</button>
+                <h2 class="text-white">Share city-to-city car journeys with a trusted community of 10 million verified members</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <img src="@routes.Assets.at("images/1.jpg")" alt="" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7 col-sm-8 col-xs-8 text-white background-black">
+                                <span class="glyphicon glyphicon-star text-danger"></span>
+                                Rating left for Chloe B.
+                                "Lovely ride with Chloe. She's friendly, a safe driver, plus she's a local!"
+                                James K.
+                            </div>
                         </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8">
-                            <span class="glyphicon glyphicon-star text-warning"></span>
-                            Rating left for Chloe B.
-                            "Lovely ride with Chloe. She's friendly, a safe driver, plus she's a local!"
-                            James K.
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <img src="@routes.Assets.at("images/2.jpg")" alt="" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7 col-sm-8 col-xs-8 text-white background-black">
+                                <span class="glyphicon glyphicon-star text-danger"></span>
+                                Rating left for Sarah A.
+                                "Trip whizzed by with some great topics of conversation. Thanks, such a pleasure!"
+                                Izzy C.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <img src="@routes.Assets.at("images/3.png")" alt="" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7 col-sm-8 col-xs-8 text-white background-black">
+                                <span class="glyphicon glyphicon-star text-danger"></span>
+                                Rating left for Alex K.
+                                "Driving to Newcastle with Alex was awesome! He was polite, fun and made the whole experience very easy. "
+                                Emma T.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <img src="@routes.Assets.at("images/2.jpg")" alt="" class="img-circle img-responsive">
-                        </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8">
-                            <span class="glyphicon glyphicon-star text-warning"></span>
-                            Rating left for Sarah A.
-                            "Trip whizzed by with some great topics of conversation. Thanks, such a pleasure!"
-                            Izzy C.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-4">
-                            <img src="@routes.Assets.at("images/3.png")" alt="" class="img-circle img-responsive">
-                        </div>
-                        <div class="col-md-8 col-sm-8 col-xs-8">
-                            <span class="glyphicon glyphicon-star text-warning"></span>
-                            Rating left for Alex K.
-                            "Driving to Newcastle with Alex was awesome! He was polite, fun and made the whole experience very easy. "
-                            Emma T.
-                        </div>
-                    </div>
-                </div>
+            </form>
+        </div>
+        <br/>
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <p class="text-primary text-center size28">Watch How It Works</p>
+                <a href="https://youtu.be/CTn-ev4fjsM">
+                        <iframe src="//www.youtube.com/embed/CTn-ev4fjsM?rel=0&amp;amp;&amp;autoplay=0" frameborder="0" allowfullscreen="false" width="200" height="200"  style="display: inline; width: 620px; min-height: 0px; height: 470px;" scrolltop="0" scrollleft="0" __idm_id__="643073"></iframe>
+                </a>
             </div>
-        </form>
+        </div>
     </div>
 
 }
