@@ -1,0 +1,41 @@
+@()
+@main("Sign up for free and join our 1 million member community | sayohat.heroku.com") {
+<div class="container">
+    <div class="page-header">
+        <h1>Travel</h1>
+    </div>
+    <div class="text-right">
+        <p>Already a member? <button class="btn btn-info">Log in</button></p>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            <p>Not yet a member? Just one more thing and your ride will be online!</p>
+            <form action="@routes.Users.add()" method="post">
+                <div class="well ">
+                    <p>In just 2 seconds</p>
+                    <button class="btn btn-block btn-primary"><span class="glyphicon glyphicon-cloud"></span> Connect in Facebook</button>
+                    <p>We don't publish on your wall without your consent.</p>
+                    <p>_________________________________ or ______________________________</p>
+                    <p>In just 30 seconds</p>
+                    <select  name="gender" required="required" class="register-gender select-register default">
+                        <option value="" selected="selected">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Fermale">Female</option>
+                    </select>
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                    <input type="text" name="eMail" placeholder="Email Name">
+                    <input type="text" name="password" placeholder="Password">
+                    <input type="text" name="password1" placeholder="Password confirmation">
+                    <select  name="birthYear" required="required" class="register-gender select-register default">
+                        <option value="" selected="selected">Birth year</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                    </select>
+                    <button type="submit">Ok</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+}

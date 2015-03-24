@@ -1,12 +1,12 @@
 package controllers
 
+/**
+ * Created by Dilshod on 24.03.2015.
+ */
 import play.api.mvc._
 import models.Ride
 
-/**
- * Created by Dilshod on 12.03.2015.
- */
-object Rides extends Controller{
+class Rides extends Controller{
   def list() = Action {
     implicit request =>
       val formParams = request.body.asFormUrlEncoded
