@@ -1,3 +1,12 @@
+.background-body {
+    background: #f4f4f4;
+}
+.background-white {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
 .text-white {
     color: #ffffff;
 }
@@ -5,10 +14,82 @@
     background-color: rgba(0,0,0,0.55);
     border-radius: 4px;
 }
-.size28 {
-    font-size: 28px;
+.btn-login {
+    font-size: 24px;
+    padding: 15px;
+}
+.size32 {
+    font-size: 32px;
+    font-style: oblique;
+}
+.background-div {
+    background: #eeeeee;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .main-div {
-    padding-right: 0px;
-    padding-left: 0px;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
 }
+.face-btn  {
+    display: inline-block;
+    height: 36px;
+    width: auto;
+    line-height: 36px;
+    padding: 0 14px 0 44px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    border: 0;
+    background-color: #3b5998;
+    text-align: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.face-btn:hover,.face-btn:focus{
+    color: #ffffff;
+    text-decoration:none;
+}
+.input-email {
+    /*background: #fff url() no-repeat 284px 50%;*/
+    padding-right: 30px;
+    width: 271px;
+}
+.travel {
+    font-size: 32px;
+    color: #ff0000;
+    padding: 10px;
+}
+.travel:focus,.travel:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+.footer-div-head {
+    background: #337ab7;
+    color: #ffffff;
+    font-size: 24px;
+    padding:5px;
+}
+.footer-div-body {
+    background: #9acfea;
+    font-size: 20px;
+    padding:5px;
+    color: #000000;
+}
+.footer-div-footer {
+    background: #337ab7;
+    color: #ffffff;
+    font-size: 14px;
+    padding:15px;
+}
+.black-link {
+    color: #000000;
+    display: block;
+}
+.black-link:focus,.black-link:hover {
+    color: #000000;
+}
+
