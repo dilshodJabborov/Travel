@@ -14,4 +14,7 @@ class Rides extends Controller{
       val toCity = formParams.get("toCity")(0)
       Ok(views.html.list(Ride.findByParams(fromCity,toCity)))
   }
+  def registr() = Action {
+    Ok(views.html.offerSeats("Offer a ride and cover your motoring costs | Step 1 | sayohat.heroku.com"))
+  }
 }

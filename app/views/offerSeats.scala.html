@@ -1,0 +1,58 @@
+@(message: String)
+
+@main(message) {
+    @navbar("")
+    <div class="container background-white">
+        <h3>Offer a ride on your next long journey</h3>
+        <div style="padding-left: 135px">
+            My schedule
+        </div>
+        <div>
+            <img src="@routes.Assets.at("images/seat1.png")" alt=""/>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">
+                <form action="#">
+                    <div class="form-group">
+                        <div class="border-div">
+                            How often are you making this trip?
+                        </div>
+                        <div class="border-div1">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <input type="radio" checked name="radio1" id="radio1">
+                                    <label for="radio1">Just once - outbound only or round trip</label>
+                                </div>
+                                <div class="col-xs-6">
+                                    <input type="radio" name="radio1" id="radio2">
+                                    <label for="radio2">Regularly - 80 km (50 miles) max.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="border-div">
+                        Pick-up and drop-off points
+                    </div>
+                    <div class="border-div1">
+                        <div class="form-group">
+                            <label for="Departure" class="control-label btn-block">Departure</label>
+                            <input type="text" class="form-control" placeholder="Buxoro Samarqnd, Xiva" id="Departure"
+                            style="background: url('@routes.Assets.at("images/searchFrom.png")') no-repeat scroll 6px 5px #fff;padding-left: 32px;">
+                        </div>
+                        <div class="form-group">
+                            <label for="Arrival" class="control-label btn-block">Arrival</label>
+                            <input type="text" class="form-control" placeholder="Buxoro Andijon, Toshkent" id="Arrival"
+                            style="background: url('@routes.Assets.at("images/searchTo.png")') no-repeat scroll 6px 5px #fff;padding-left: 32px;">
+                        </div>
+                        <br/>
+                        <p>Now add your stopover points - offering to pick up passengers along the way is a sure way to fill your car.</p>
+                        <input type="text" placeholder="Add sites on your rote" >
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+    </div>
+    @footer()
+}

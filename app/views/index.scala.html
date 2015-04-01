@@ -2,8 +2,13 @@
 
 @main(message) {
     @navbar("Home")
+    <div class="offerRide-div">
+        <p class="text-center">Driving somewhere?</p>
+        <a href="@routes.Rides.registr()" class="h2 text-info">Offer a ride</a>
+    </div>
+
     <div class="container" style="padding-left: 0px;padding-right: 0px;margin-top: -20px;" >
-        <div style="background-image: url(@routes.Assets.at("images/road5.jpeg"));background-repeat: no-repeat">
+            <div style="background-image: url(@routes.Assets.at("images/road5.jpeg"));background-repeat: no-repeat">
             <form class="form form-inline" method="post" action="@routes.Rides.list()">
                 <div style="background: rgba(255,255,255,0.5)">
                     <h2 class="text-white"> Connecting people who need to travel with drivers who have empty seats</h2>
