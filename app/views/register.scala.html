@@ -1,88 +1,86 @@
 @()
 @main("Sign up for free and join our 1 million member community | sayohat.heroku.com") {
-<div class="container main-div">
-    <div class="background-white">
-        <a href="#" class="travel">&nbsp;&nbsp;Travel</a>
-    </div>
-    <div class="text-right background-div" >
-        <p class="btn-login">Already a member? <button class="btn btn-info">Log in</button></p>
-    </div>
-    <div class="row">
-        <div class="col-xs-8 text-center">
-            <p class="h3 text-center">Not yet a member? Sign up for free</p>
-            <form action="@routes.Users.add()" method="post">
-                <div class="well ">
-                    <p class="h4">In just <span class="text-success">2 seconds</span></p>
-                    <a href="#" class="face-btn" style="background: #3b5998 url(@routes.Assets.at("images/fa1.png")) 5px center no-repeat"> Connect in Facebook</a>
-                    <p class="h5">We don't publish on your wall without your consent.</p>
-                    <br/>
-                    <p>_________________________________ or ______________________________</p>
-                    <br/>
-                    <p class="h4">In just <span class="text-success">30 seconds</span></p>
-                    <div class="row">
-                        <div class="col-xs-4 col-xs-offset-3">
-                            <div class="form-group">
-                                <select  name="gender" required="required" class="form-control small">
-                                    <option value="" selected="selected">Gender</option>
-                                    <option value="Male">Male</option>
-                                    <option value="Fermale">Female</option>
-                                </select>
+    @navbar("Sign up")
+    <div class="container background-white main-border">
+        <div class="text-right main-background row border-bottm" >
+            <p class="btn-login">Already a member? <button class="btn btn-info">Log in</button></p>
+        </div>
+        <div class="row">
+            <div class="col-xs-8 text-center">
+                <p class="h3 text-center">Not yet a member? Sign up for free</p>
+                <form action="@routes.Users.add()" method="post">
+                    <div class="main-background main-border">
+                        <p class="h4">In just <span class="text-success">2 seconds</span></p>
+                        <a href="#" class="face-btn" style="background: #3b5998 url(@routes.Assets.at("images/fa1.png")) 5px center no-repeat"> Connect in Facebook</a>
+                        <p class="h5">We don't publish on your wall without your consent.</p>
+                        <br/>
+                        <p>_________________________________ or ______________________________</p>
+                        <br/>
+                        <p class="h4">In just <span class="text-success">30 seconds</span></p>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-3">
+                                <div class="form-group">
+                                    <select  name="gender" required="required" class="form-control small">
+                                        <option value="" selected="selected">Gender</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Fermale">Female</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="firstName" placeholder="First Name">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="firstName" placeholder="First Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="lastName" placeholder="Last Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="eMail" placeholder="Email Name">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="eMail" placeholder="Email Name">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="password" placeholder="Password">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="password" placeholder="Password">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="password1" placeholder="Password confirmation">
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="password1" placeholder="Password confirmation">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <select class="form-control"  name="birthYear" required="required" class="register-gender select-register default">
-                                    <option value="" selected="selected">Birth year</option>
-                                    @for(year <- 1997 to 1915 by -1){
-                                    <option value="@year">@year</option>
-                                }
-                                </select>
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <select class="form-control"  name="birthYear" required="required" class="register-gender select-register default">
+                                        <option value="" selected="selected">Birth year</option>
+                                        @for(year <- 1997 to 1915 by -1){
+                                        <option value="@year">@year</option>
+                                    }
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group text-left">
-                                <input  type="checkbox" id="newsletter_flag"  name="newsletterFlag" required="required">
-                                <label for="newsletter_flag" style="display: inline">
-                                    Receive updates on new features, or useful information for you
-                                </label>
-                                <p class="h6">By clicking on "Get started now" or “Connect with Facebook” you accept our <a href="#">ToS</a> and certify you are over 18 years old.</p>
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group text-left">
+                                    <input  type="checkbox" id="newsletter_flag"  name="newsletterFlag" required="required">
+                                    <label for="newsletter_flag" style="display: inline">
+                                        Receive updates on new features, or useful information for you
+                                    </label>
+                                    <p class="h6">By clicking on "Get started now" or “Connect with Facebook” you accept our <a href="#">ToS</a> and certify you are over 18 years old.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-xs-offset-3">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary"><span class="h3">Get started now</span></button>
+                            <div class="col-xs-6 col-xs-offset-3">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary"><span class="h3">Get started now</span></button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-@footer()
+    @footer()
 }

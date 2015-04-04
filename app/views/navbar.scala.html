@@ -1,5 +1,5 @@
 @(activPage: String)
-<nav class="navbar navbar-default container" style="margin-bottom: 0px;">
+<nav class="navbar navbar-default container" role="navigation" style="border-radius: 0px;margin-bottom: 0px;border: 1px solid #cccccc;background: #ffffff">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
             <span class="sr-only">Toggle navigation</span>
@@ -10,6 +10,11 @@
         <a href="#" class="navbar-brand">Travel Asia</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+        <div class="nav navbar-nav navbar-btn" style="display: none">
+            <a href="#" class="btn btn-warning btn-group-xs">Find a ride</a>
+            or
+            <a href="#" class="btn btn-danger">Offer a ride</a>
+        </div>
         <ul class="nav navbar-nav navbar-right ">
             <li class="@if(activPage == "Sign up") {active}"><a href="@routes.Users.add()">Sign up</a></li>
             <li class="@if(activPage == "Login up") {active}">

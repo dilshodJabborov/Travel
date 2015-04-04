@@ -1,26 +1,30 @@
-.input-search1 {
+.main-background {
+    background: #f4f4f4;
+}
+.background-white {
+    background: #ffffff;
+}
+.background-black {
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 4px;
+}
+.main-border {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+.border-bottm {
+    border-bottom: 1px solid #cccccc;
+}
+/*.input-search1 {
     background: url('@routes.Assets.at("images/searchFrom.png")') no-repeat scroll 6px 5px #fff;
     padding-left: 32px;
 }
 .input-search1 {
     background: url('@routes.Assets.at("images/searchTo.png")') no-repeat scroll 6px 5px #fff;
     padding-left: 32px;
-}
-.background-body {
-    background: #f4f4f4;
-}
-.background-white {
-    background: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    margin-left: -15px;
-    margin-right: -15px;
-}
+}*/
 .text-white {
     color: #ffffff;
-}
-.background-black {
-    background-color: rgba(0,0,0,0.55);
-    border-radius: 4px;
 }
 .btn-login {
     font-size: 24px;
@@ -28,12 +32,6 @@
 }
 .size32 {
     font-size: 32px;
-    font-style: oblique;
-}
-.background-div {
-    background: #eeeeee;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 .main-div {
     border: 1px solid #e0e0e0;
@@ -65,15 +63,6 @@
     /*background: #fff url() no-repeat 284px 50%;*/
     padding-right: 30px;
     width: 271px;
-}
-.travel {
-    font-size: 32px;
-    color: #ff0000;
-    padding: 10px;
-}
-.travel:focus,.travel:hover {
-    text-decoration: none;
-    color: #ff0000;
 }
 .footer-div-head {
     background: #337ab7;
@@ -113,20 +102,21 @@
     margin-left: 12px;
 }
 .offerRide-div {
-    right: 100px;
+    right: 8%;
     margin-top: 0px;
     background: #ffffff;
     position: absolute;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #46b8da;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #cccccc;
     z-index: 50;
     width: auto;
 }
 .border-div {
     border: 1px solid #dfdfcd;
     background: #ffffff;
-    padding-left: 10px;
+    padding: 10px;
     font-size: 24px;
 }
 .border-div1 {
@@ -134,4 +124,8 @@
     background: #f1f1e9;
     padding: 10px;
     font-size: 14px;
+}
+.padding15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
