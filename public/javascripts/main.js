@@ -8,3 +8,8 @@ function changeLoginUp(loginUp) {
         document.getElementById(loginUp).style.display = 'none';
     }
 }
+function closeVideo(WatchHowItWorks,videoDiv) {
+    document.getElementById(videoDiv).style.display = 'none';
+    document.getElementById(WatchHowItWorks).src='';
+    document.getElementById(WatchHowItWorks).src='//www.youtube.com/embed/yP2BUxyyHYw?rel=0&amp;amp;&amp; autoplay=0';
+}

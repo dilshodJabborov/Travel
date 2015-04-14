@@ -1,0 +1,30 @@
+@(id:String)
+<div id=@id  class="login-up">
+    <a href="#" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connection Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br/>
+    <p class="text-center">or</p>
+    <form action="#" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="My email">
+        </div>
+        <input type="text" class="form-control" placeholder="My password">
+        <div class="form-group">
+                        </div>
+        <div class="form-group">
+            <p><a href="#">I've forgotten my password</a></p>
+        </div>
+        <div class="form-group">
+                        </div>
+        <div class="form-group">
+            <input  type="checkbox" id="newsletter_flag"  name="newsletterFlag" required="required">
+            <label for="newsletter_flag" style="display: inline">
+                                Remember me
+            </label>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info btn-block">Log in</button>
+        </div>
+    </form>
+    <hr/>
+    <p>Not a member yet? </p>
+    <a href="@routes.Users.add()">Sign up in 30 seconds</a>
+</div>

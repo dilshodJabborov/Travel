@@ -2,10 +2,19 @@
 @main("Sign up for free and join our 1 million member community | sayohat.heroku.com") {
     @navbar("Sign up")
     <div class="container background-white main-border">
-        <div class="text-right main-background row border-bottm" >
-            <p class="btn-login">Already a member? <button class="btn btn-info">Log in</button></p>
+        <div class="text-right main-background row border-bottm">
+            <p class="btn-login">
+                Already a member?
+                <a href="#" onclick="changeLoginUp('loginUpBtn')" onmouseout="helper1(loginUpBtn)" class="btn btn-primary">
+                    Log in
+                </a>
+            </p>
+        </div>
+        <div style="margin-left: 75%" >
+        @login("loginUpBtn")
         </div>
         <div class="row">
+            @video()
             <div class="col-xs-8 text-center">
                 <p class="h3 text-center">Not yet a member? Sign up for free</p>
                 <form action="@routes.Users.add()" method="post">
@@ -44,12 +53,12 @@
                             </div>
                             <div class="col-xs-6 col-xs-offset-3">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="password" placeholder="Password">
+                                    <input class="form-control" type="password" name="password" placeholder="Password">
                                 </div>
                             </div>
                             <div class="col-xs-6 col-xs-offset-3">
                                 <div class="form-group">
-                                    <input class="form-control" type="text" name="password1" placeholder="Password confirmation">
+                                    <input class="form-control" type="password" name="password1" placeholder="Password confirmation">
                                 </div>
                             </div>
                             <div class="col-xs-6 col-xs-offset-3">
@@ -64,8 +73,8 @@
                             </div>
                             <div class="col-xs-6 col-xs-offset-3">
                                 <div class="form-group text-left">
-                                    <input  type="checkbox" id="newsletter_flag"  name="newsletterFlag" required="required">
-                                    <label for="newsletter_flag" style="display: inline">
+                                    <input  type="checkbox" id="newsletter_flag1"  name="newsletterFlag" required="required">
+                                    <label for="newsletter_flag1" style="display: inline">
                                         Receive updates on new features, or useful information for you
                                     </label>
                                     <p class="h6">By clicking on "Get started now" or “Connect with Facebook” you accept our <a href="#">ToS</a> and certify you are over 18 years old.</p>
@@ -79,6 +88,12 @@
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="col-xs-4 text-center">
+                <div class="text-main">
+                    <a href="#" class="text-main">Watch How It Works</a>
+                </div>
+                <img src="@routes.Assets.at("images/photo-video-start-icon.png")" alt="" onclick="changeLoginUp('videoDiv')">
             </div>
         </div>
     </div>

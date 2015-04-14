@@ -15,16 +15,13 @@
 .border-bottm {
     border-bottom: 1px solid #cccccc;
 }
-/*.input-search1 {
-    background: url('@routes.Assets.at("images/searchFrom.png")') no-repeat scroll 6px 5px #fff;
-    padding-left: 32px;
-}
-.input-search1 {
-    background: url('@routes.Assets.at("images/searchTo.png")') no-repeat scroll 6px 5px #fff;
-    padding-left: 32px;
-}*/
 .text-white {
     color: #ffffff;
+}
+.text-main {
+    padding: 10px;
+    font-size: 20px;
+    color: #777777;
 }
 .btn-login {
     font-size: 24px;
@@ -60,7 +57,6 @@
     text-decoration:none;
 }
 .input-email {
-    /*background: #fff url() no-repeat 284px 50%;*/
     padding-right: 30px;
     width: 271px;
 }
@@ -128,4 +124,32 @@
 .padding15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+.video-div{
+    position: absolute;
+    display: none;
+    z-index: 1002;
+    outline: 0px;
+    height: auto;
+    width: 640px;
+    margin-left: 20%;
+    margin-top: 1%;
+    padding: 2px;
+    background: #f9f2f4;
+    border: 1px solid #888888;
+    color: #080808;
+}
+.video-iframe {
+    width: 620px;
+    min-height: 0px;
+    height: 470px;
+    padding: 4px;
+}
+.carousel-div {
+    color: lightseagreen;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.most-popular-car-share {
+    display: none;
 }
